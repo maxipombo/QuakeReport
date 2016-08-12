@@ -41,8 +41,8 @@ public class EarthquakeActivity extends AppCompatActivity {
         earthquakes.add(new Earthquake("4.9","Rio de Janeiro","Aug 19, 2012"));
         earthquakes.add(new Earthquake("1.6","Paris","Oct 30, 2011"));
 
-        // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
-        // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
+        // Create an {@link EarthquakeAdapter}, whose data source is a list of
+        // {@link Earthquake}s. The adapter knows how to create list item views for each item
         // in the list.
         EarthquakeAdapter earthquakeAdapter = new EarthquakeAdapter(this, earthquakes);
 

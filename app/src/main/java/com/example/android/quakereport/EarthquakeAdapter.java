@@ -50,28 +50,28 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
                     R.layout.list_earthquake, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
+        // Get the {@link Earthquake} object located at this position in the list
         Earthquake currentEarthquake = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the TextView in the list_earthquake.xml layout with the ID magnitude
         TextView magnitudeTextView = (TextView) listItemView.findViewById(R.id.magnitude);
-        // Get the version name from the current AndroidFlavor object and
+        // Get the magnitude from the current Earthquake object and
         // set this text on the name TextView
         magnitudeTextView.setText(currentEarthquake.getMagnitude());
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
+        // Find the TextView in the list_earthquake.xml layout with the ID location
         TextView locationTextView = (TextView) listItemView.findViewById(R.id.location);
-        // Get the version number from the current AndroidFlavor object and
+        // Get the location from the current Earthquake object and
         // set this text on the number TextView
         locationTextView.setText(currentEarthquake.getLocation());
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
+        // Find the TextView in the list_earthquake.xml layout with the ID date
         TextView dateTextView = (TextView) listItemView.findViewById(R.id.date);
-        // Get the version number from the current AndroidFlavor object and
+        // Get the date from the current Earthquake object and
         // set this text on the number TextView
         dateTextView.setText(currentEarthquake.getDate());
 
-        // Return the whole list item layout (containing 2 TextViews and an ImageView)
+        // Return the whole list item layout (containing 3 TextViews)
         // so that it can be shown in the ListView
         return listItemView;
     }
