@@ -12,17 +12,17 @@ public class Earthquake {
     private String mLocation;
 
     // Earthquake date
-    private String mDate;
+    private long mTimeInMilliseconds;
 
     /*
     * Create a new Earthquake object.
     *
     * */
-    public Earthquake(String vMagnitude, String vLocation, String vDate)
+    public Earthquake(String vMagnitude, String vLocation, Long vTimeInMilliseconds)
     {
         mMagnitude = vMagnitude;
         mLocation = vLocation;
-        mDate = vDate;
+        mTimeInMilliseconds = vTimeInMilliseconds;
     }
 
     /**
@@ -40,9 +40,9 @@ public class Earthquake {
     }
 
     /**
-     * Get the Date
+     * Get the Date time In Milliseconds
      */
-    public String getDate() {
-        return mDate;
+    public long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 }
