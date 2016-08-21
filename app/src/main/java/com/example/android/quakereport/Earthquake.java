@@ -14,15 +14,19 @@ public class Earthquake {
     // Earthquake date
     private long mTimeInMilliseconds;
 
+    // Earthquake url
+    private String mUrl;
+
     /*
     * Create a new Earthquake object.
     *
     * */
-    public Earthquake(Double vMagnitude, String vLocation, Long vTimeInMilliseconds)
+    public Earthquake(Double vMagnitude, String vLocation, Long vTimeInMilliseconds, String vUrl)
     {
         mMagnitude = vMagnitude;
         mLocation = vLocation;
         mTimeInMilliseconds = vTimeInMilliseconds;
+        mUrl = vUrl;
     }
 
     /**
@@ -44,5 +48,12 @@ public class Earthquake {
      */
     public long getTimeInMilliseconds() {
         return mTimeInMilliseconds;
+    }
+
+    /**
+     * Get the URL
+     */
+    public String getUrl() {
+        return mUrl;
     }
 }
