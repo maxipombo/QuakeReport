@@ -10,10 +10,16 @@
 
     <TextView
         android:id="@+id/magnitude"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        tools:text="8.9" />
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        tools:text="8.9"
+        android:background="@drawable/magnitude_circle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        />
 
     <TextView
         android:id="@+id/location_offset"
@@ -24,6 +30,7 @@
 
     <TextView
         android:id="@+id/primary_location"
+        android:layout_marginLeft="16dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
